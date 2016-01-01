@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var request = require('request');
+var progress = require('request-progress');
+var fs = require('fs');
+var path = require('path');
+var zlib = require('zlib');
+var ProgressBar = require('progress');
+var Promise = require('es6-promise').Promise;
+
+var DOWNLOAD_URL = 'http://localhost:3000/download';
+
+program
+  .action(function(confpath) {
+    var metadata = JSON.parse(fs.readFileSync(confpath));
+    console.log(metadata);
+
+    var relpath = metadata.dataset || metadata.model;
+
+    var req = request({
+      url: DOWNLOAD_URL,
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(metadata)
+    });
+
+    req.on('response', function(response) {
+      progress = new ProgressBar('downloading [:bar] :percent :etas', {
+        total: 0
+      });
+    });
+
+    var stream = fs.createWriteStream(relpath);
+    stream.on('data', function(chunk) {
+      progress.tick(chunk.length);
+    });
+    req.pipe(stream);
+  })
+  .parse(process.argv);
