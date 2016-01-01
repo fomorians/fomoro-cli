@@ -2,7 +2,9 @@
   "name": "fomoro-cli",
   "version": "0.0.1",
   "bin": {
-    "fomoro": "./bin/cli.js"
+    "fomoro": "./bin/fomoro",
+    "fomoro-upload": "./bin/fomoro-upload",
+    "fomoro-download": "./bin/fomoro-download"
   },
   "dependencies": {
     "commander": "^2.9.0",

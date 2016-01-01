@@ -2,7 +2,6 @@
 
 var program = require('commander');
 var request = require('request');
-var progress = require('request-progress');
 var fs = require('fs');
 var path = require('path');
 var zlib = require('zlib');
@@ -52,7 +51,7 @@ function upload(metadata, stream) {
       if (err) {
         reject(err);
       } else {
-        console.log('upload complete');
+        console.log('upload complete', body);
         resolve(body);
       }
     });
@@ -81,10 +80,12 @@ function upload(metadata, stream) {
 program
   .action(function(confpath) {
     var metadata = JSON.parse(fs.readFileSync(confpath));
+    // TODO: validate metadata
 
     var relpath = metadata.dataset || metadata.model;
+    var abspath = path.resolve(path.dirname(confpath), relpath);
 
-    compress(relpath).then(function(stream) {
+    compress(abspath).then(function(stream) {
       return upload(metadata, stream);
     }).then(function(body) {
       console.log(body);
