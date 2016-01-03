@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var request = require('request');
+var fs = require('fs');
+var path = require('path');
+
+var TRAIN_URL = 'http://localhost:3000/train';
+
+program
+  .action(function(confpath) {
+    var metadata = JSON.parse(fs.readFileSync(confpath));
+    console.log(metadata);
+    // TODO: validate metadata
+
+    var relpath = metadata.dataset || metadata.model;
+    var abspath = path.resolve(path.dirname(confpath), relpath);
+
+    var req = request({
+      url: TRAIN_URL,
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(metadata)
+    }, function(err, res, body) {
+      if (err) {
+        console.error(err.stack);
+        process.exit(1);
+        return;
+      }
+
+      console.log(body);
+    });
+  })
+  .parse(process.argv);

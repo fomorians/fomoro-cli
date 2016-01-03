@@ -34,10 +34,12 @@ program
     });
 
     var i = 0;
+    var total = 0;
     var gunzip = zlib.createGunzip();
     var wstream = fs.createWriteStream(abspath);
     req.on('data', function(chunk) {
-      process.stdout.write('\rdownloading...' + spinner[i]);
+      total += chunk.length;
+      process.stdout.write('\rdownloading...' + spinner[i] + ' ' + total);
       i++;
       i %= spinner.length;
     });
