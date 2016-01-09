@@ -8,12 +8,19 @@ var path = require('path');
 var TRAIN_URL = 'http://localhost:3000/train';
 
 program
-  .action(function(confpath) {
+  .action(function(confpath, args) {
     var metadata = JSON.parse(fs.readFileSync(confpath));
-    console.log(metadata);
-    // TODO: validate metadata
 
-    var relpath = metadata.dataset || metadata.model;
+    options = Object.assign({}, metadata);
+    options.global_step = 0;
+    options.batch_size = args.batch_size || 50;
+    options.epochs = args.epochs || 2000;
+    options.checkpoint_epoch = args.checkpoint_epoch || 100;
+
+    // TODO: validate options
+    console.log(options);
+
+    var relpath = options.dataset || options.model;
     var abspath = path.resolve(path.dirname(confpath), relpath);
 
     var req = request({
@@ -22,7 +29,7 @@ program
       headers: {
         'content-type': 'application/json'
       },
-      body: JSON.stringify(metadata)
+      body: JSON.stringify(options)
     }, function(err, res, body) {
       if (err) {
         console.error(err.stack);

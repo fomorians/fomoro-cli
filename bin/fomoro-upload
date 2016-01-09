@@ -47,8 +47,14 @@ function upload(metadata, stream) {
   console.log('uploading data...');
 
   return new Promise(function(resolve, reject) {
-    var req = request.post(UPLOAD_URL, function(err, res, body) {
+    var req = request({
+      uri: UPLOAD_URL,
+      method: 'POST',
+      timeout: 0,
+      forever: true
+    }, function(err, res, body) {
       if (err) {
+        console.error(err.connect, err.code, err.stack);
         reject(err);
       } else {
         console.log('upload complete', body);
@@ -64,7 +70,7 @@ function upload(metadata, stream) {
 
     var progress;
 
-    stream.on('data', function(chunk) {
+    rstream.on('data', function(chunk) {
       progress.tick(chunk.length);
     });
 
