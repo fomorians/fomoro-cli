@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var pull = require('../lib/pull');
+
+commander.parse(process.argv);
+
+pull();

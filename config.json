@@ -1,0 +1,15 @@
+{
+  "push_endpoint": "http://localhost:3000/push",
+  "pull_endpoint": "http://localhost:3000/pull",
+  "remove_endpoint": "http://localhost:3000/remove",
+
+  "models_endpoint": "http://localhost:3000/models",
+  "datasets_endpoint": "http://localhost:3000/datasets",
+
+  "model_endpoint": "http://localhost:3000/model",
+  "dataset_endpoint": "http://localhost:3000/dataset",
+
+  "train_endpoint": "http://localhost:3000/train",
+  "status_endpoint": "http://localhost:3000/status",
+  "stop_endpoint": "http://localhost:3000/stop"
+}

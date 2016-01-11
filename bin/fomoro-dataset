@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 var commander = require('commander');
-var train = require('../lib/train');
+var dataset = require('../lib/dataset');
 
 commander
-  .action(train)
+  .action(dataset)
   .parse(process.argv);

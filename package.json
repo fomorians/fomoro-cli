@@ -3,15 +3,32 @@
   "version": "0.0.1",
   "bin": {
     "fomoro": "./bin/fomoro",
-    "fomoro-upload": "./bin/fomoro-upload",
-    "fomoro-download": "./bin/fomoro-download"
+    "fomoro-dataset": "./bin/fomoro-dataset",
+    "fomoro-model": "./bin/fomoro-model",
+    "fomoro-datasets": "./bin/fomoro-datasets",
+    "fomoro-models": "./bin/fomoro-models",
+    "fomoro-push": "./bin/fomoro-push",
+    "fomoro-pull": "./bin/fomoro-pull",
+    "fomoro-rm": "./bin/fomoro-rm",
+    "fomoro-status": "./bin/fomoro-status",
+    "fomoro-stop": "./bin/fomoro-stop",
+    "fomoro-train": "./bin/fomoro-train"
   },
   "dependencies": {
+    "cli-spinner": "^0.2.1",
     "commander": "^2.9.0",
     "es6-promise": "^3.0.2",
+    "node-spinner": "0.0.4",
     "progress": "^1.1.8",
     "request": "^2.67.0",
     "request-progress": "^0.4.0",
     "temp": "^0.8.3"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "should": "^8.0.2"
   }
 }

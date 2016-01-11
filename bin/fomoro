@@ -1,13 +1,23 @@
 #!/usr/bin/env node
 
-var program = require('commander');
+var commander = require('commander');
 
-program
+commander
   .version('0.0.1')
-  .description('Fomoro toolbelt')
-  .arguments('<command> <config>')
-  .command('upload <config>', 'upload a model or dataset')
-  .command('download <config>', 'upload a model or dataset')
-  .command('train <config>', 'train a model')
-  .action(function() {})
+  .description('Fomoro toolbelt.')
+
+  .command('push', 'Push a model or dataset.')
+  .command('pull', 'Pull a model or dataset.')
+
+  .command('models', 'List models.')
+  .command('datasets', 'List datasets.')
+
+  .command('rm [key]', 'Remove a model or dataset.')
+  .command('model [key]', 'Get metadata for a model.')
+  .command('dataset [key]', 'Get metadata for a dataset.')
+
+  .command('train [key]', 'Train a model.')
+  .command('status [key]', "Return the status a model's training session.")
+  .command('stop [key]', 'Stop training a model.')
+
   .parse(process.argv);

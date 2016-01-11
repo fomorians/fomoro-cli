@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var push = require('../lib/push');
+
+commander.parse(process.argv);
+
+push();
