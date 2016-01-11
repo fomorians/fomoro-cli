@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var session_start = require('../lib/handlers/session_start');
+
+commander.parse(process.argv);
+
+session_start.apply(null, commander.args);

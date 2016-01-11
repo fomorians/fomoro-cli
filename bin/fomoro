@@ -6,18 +6,17 @@ commander
   .version('0.0.1')
   .description('Fomoro toolbelt.')
 
-  .command('push', 'Push a model or dataset.')
-  .command('pull', 'Pull a model or dataset.')
+  .command('model-push', 'Push a new model.')
+  .command('model-rm', 'Remove a model.')
 
-  .command('models', 'List models.')
-  .command('datasets', 'List datasets.')
+  .command('data-push', 'Push a new dataset.')
+  .command('data-rm', 'Remove a dataset.')
 
-  .command('rm [key]', 'Remove a model or dataset.')
-  .command('model [key]', 'Get metadata for a model.')
-  .command('dataset [key]', 'Get metadata for a dataset.')
+  .command('session-start', 'Start a training session.')
+  .command('session-stop', 'Stop a training session.')
+  .command('session-info', 'Inspect a training session.')
 
-  .command('train [key]', 'Train a model.')
-  .command('status [key]', "Return the status a model's training session.")
-  .command('stop [key]', 'Stop training a model.')
+  .command('checkpoint-pull', 'Pull training session checkpoints.')
+  .command('checkpoint-rm', 'Remove training session checkpoints.')
 
   .parse(process.argv);

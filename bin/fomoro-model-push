@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var model_push = require('../lib/handlers/model_push');
+
+commander.parse(process.argv);
+
+model_push.apply(null, commander.args);

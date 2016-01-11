@@ -3,16 +3,15 @@
   "version": "0.0.1",
   "bin": {
     "fomoro": "./bin/fomoro",
-    "fomoro-dataset": "./bin/fomoro-dataset",
-    "fomoro-model": "./bin/fomoro-model",
-    "fomoro-datasets": "./bin/fomoro-datasets",
-    "fomoro-models": "./bin/fomoro-models",
-    "fomoro-push": "./bin/fomoro-push",
-    "fomoro-pull": "./bin/fomoro-pull",
-    "fomoro-rm": "./bin/fomoro-rm",
-    "fomoro-status": "./bin/fomoro-status",
-    "fomoro-stop": "./bin/fomoro-stop",
-    "fomoro-train": "./bin/fomoro-train"
+    "fomoro-model-push": "./bin/fomoro-model-push",
+    "fomoro-model-rm": "./bin/fomoro-model-rm",
+    "fomoro-data-push": "./bin/fomoro-data-push",
+    "fomoro-data-rm": "./bin/fomoro-data-rm",
+    "fomoro-session-start": "./bin/fomoro-session-start",
+    "fomoro-session-info": "./bin/fomoro-session-info",
+    "fomoro-session-stop": "./bin/fomoro-session-stop",
+    "fomoro-checkpoint-pull": "./bin/fomoro-checkpoint-pull",
+    "fomoro-checkpoint-rm": "./bin/fomoro-checkpoint-rm"
   },
   "dependencies": {
     "cli-spinner": "^0.2.1",

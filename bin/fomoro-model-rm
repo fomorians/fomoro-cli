@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 var commander = require('commander');
-var pull = require('../lib/pull');
+var model_rm = require('../lib/handlers/model_rm');
 
 commander.parse(process.argv);
 
-pull();
+model_rm.apply(null, commander.args);

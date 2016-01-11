@@ -1,8 +1,0 @@
-#!/usr/bin/env node
-
-var commander = require('commander');
-var dataset = require('../lib/dataset');
-
-commander
-  .action(dataset)
-  .parse(process.argv);

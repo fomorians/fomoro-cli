@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var session_stop = require('../lib/handlers/session_stop');
+
+commander.parse(process.argv);
+
+session_stop.apply(null, commander.args);

@@ -1,8 +1,0 @@
-#!/usr/bin/env node
-
-var commander = require('commander');
-var models = require('../lib/models');
-
-commander
-  .action(models)
-  .parse(process.argv);

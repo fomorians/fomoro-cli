@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var checkpoint_rm = require('../lib/handlers/checkpoint_rm');
+
+commander.parse(process.argv);
+
+checkpoint_rm.apply(null, commander.args);

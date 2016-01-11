@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 var commander = require('commander');
-var push = require('../lib/push');
+var data_rm = require('../lib/handlers/data_rm');
 
 commander.parse(process.argv);
 
-push();
+data_rm.apply(null, commander.args);

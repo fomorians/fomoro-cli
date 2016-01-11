@@ -1,8 +1,0 @@
-#!/usr/bin/env node
-
-var commander = require('commander');
-var stop = require('../lib/stop');
-
-commander
-  .action(stop)
-  .parse(process.argv);

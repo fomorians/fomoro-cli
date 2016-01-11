@@ -1,8 +1,0 @@
-#!/usr/bin/env node
-
-var commander = require('commander');
-var remove = require('../lib/remove');
-
-commander
-  .action(remove)
-  .parse(process.argv);

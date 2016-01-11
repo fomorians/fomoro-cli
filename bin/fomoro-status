@@ -1,8 +1,0 @@
-#!/usr/bin/env node
-
-var commander = require('commander');
-var status = require('../lib/status');
-
-commander
-  .action(status)
-  .parse(process.argv);
