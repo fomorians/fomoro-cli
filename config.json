@@ -1,15 +1,14 @@
 {
-  "push_endpoint": "http://localhost:3000/push",
-  "pull_endpoint": "http://localhost:3000/pull",
-  "remove_endpoint": "http://localhost:3000/remove",
+  "model_push_endpoint": "http://localhost:3000/model/push",
+  "model_rm_endpoint": "http://localhost:3000/model/rm",
 
-  "models_endpoint": "http://localhost:3000/models",
-  "datasets_endpoint": "http://localhost:3000/datasets",
+  "data_push_endpoint": "http://localhost:3000/data/push",
+  "data_rm_endpoint": "http://localhost:3000/data/rm",
 
-  "model_endpoint": "http://localhost:3000/model",
-  "dataset_endpoint": "http://localhost:3000/dataset",
+  "session_start_endpoint": "http://localhost:3000/session/start",
+  "session_stop_endpoint": "http://localhost:3000/session/stop",
+  "session_info_endpoint": "http://localhost:3000/session/info",
 
-  "train_endpoint": "http://localhost:3000/train",
-  "status_endpoint": "http://localhost:3000/status",
-  "stop_endpoint": "http://localhost:3000/stop"
+  "checkpoint_pull_endpoint": "http://localhost:3000/checkpoint/pull",
+  "checkpoint_rm_endpoint": "http://localhost:3000/checkpoint/rm"
 }
