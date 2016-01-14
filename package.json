@@ -17,6 +17,7 @@
     "cli-spinner": "^0.2.1",
     "commander": "^2.9.0",
     "es6-promise": "^3.0.2",
+    "mkdirp": "^0.5.1",
     "node-spinner": "0.0.4",
     "progress": "^1.1.8",
     "request": "^2.67.0",
