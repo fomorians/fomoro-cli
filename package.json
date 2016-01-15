@@ -9,6 +9,7 @@
     "fomoro-data-rm": "./bin/fomoro-data-rm",
     "fomoro-session-start": "./bin/fomoro-session-start",
     "fomoro-session-info": "./bin/fomoro-session-info",
+    "fomoro-session-watch": "./bin/fomoro-session-watch",
     "fomoro-session-stop": "./bin/fomoro-session-stop",
     "fomoro-checkpoint-pull": "./bin/fomoro-checkpoint-pull",
     "fomoro-checkpoint-rm": "./bin/fomoro-checkpoint-rm"

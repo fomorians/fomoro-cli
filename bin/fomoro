@@ -15,6 +15,7 @@ commander
   .command('session-start', 'Start a training session.')
   .command('session-stop', 'Stop a training session.')
   .command('session-info', 'Inspect a training session.')
+  .command('session-watch', 'Watch a training session.')
 
   .command('checkpoint-pull', 'Pull training session checkpoints.')
   .command('checkpoint-rm', 'Remove training session checkpoints.')
