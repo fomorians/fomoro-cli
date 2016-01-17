@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+
+commander
+  .command('push', 'Push a new dataset.')
+  .command('rm', 'Remove a dataset.')
+  .parse(process.argv);

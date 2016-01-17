@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+
+commander
+  .command('pull', 'Pull training session checkpoints.')
+  .command('rm', 'Remove training session checkpoints.')
+  .parse(process.argv);

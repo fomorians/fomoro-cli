@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+
+commander
+  .command('start', 'Start a training session.')
+  .command('stop', 'Stop a training session.')
+  .command('info', 'Inspect a training session.')
+  .command('watch', 'Watch a training session.')
+  .parse(process.argv);

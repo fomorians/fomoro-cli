@@ -3,14 +3,18 @@
   "version": "0.0.1",
   "bin": {
     "fomoro": "./bin/fomoro",
+    "fomoro-model": "./bin/fomoro-model",
     "fomoro-model-push": "./bin/fomoro-model-push",
     "fomoro-model-rm": "./bin/fomoro-model-rm",
+    "fomoro-data": "./bin/fomoro-data",
     "fomoro-data-push": "./bin/fomoro-data-push",
     "fomoro-data-rm": "./bin/fomoro-data-rm",
+    "fomoro-session": "./bin/fomoro-session",
     "fomoro-session-start": "./bin/fomoro-session-start",
     "fomoro-session-info": "./bin/fomoro-session-info",
     "fomoro-session-watch": "./bin/fomoro-session-watch",
     "fomoro-session-stop": "./bin/fomoro-session-stop",
+    "fomoro-checkpoint": "./bin/fomoro-checkpoint",
     "fomoro-checkpoint-pull": "./bin/fomoro-checkpoint-pull",
     "fomoro-checkpoint-rm": "./bin/fomoro-checkpoint-rm"
   },
