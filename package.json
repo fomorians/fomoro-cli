@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "bin": {
     "fomoro": "./bin/fomoro",
+    "fomoro-login": "./bin/fomoro-login",
     "fomoro-model": "./bin/fomoro-model",
     "fomoro-model-push": "./bin/fomoro-model-push",
     "fomoro-model-rm": "./bin/fomoro-model-rm",
@@ -25,6 +26,7 @@
     "mkdirp": "^0.5.1",
     "node-spinner": "0.0.4",
     "progress": "^1.1.8",
+    "read": "^1.0.7",
     "request": "^2.67.0",
     "request-progress": "^0.4.0",
     "temp": "^0.8.3"

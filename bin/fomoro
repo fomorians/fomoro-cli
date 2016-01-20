@@ -6,6 +6,8 @@ commander
   .version('0.0.1')
   .description('Fomoro toolbelt.')
 
+  .command('login', 'Login to Fomoro.')
+
   .command('model push', 'Push a new model.')
   .command('model rm', 'Remove a model.')
 

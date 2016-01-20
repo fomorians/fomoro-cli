@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var login = require('../lib/handlers/login');
+
+commander.parse(process.argv);
+
+login.apply(null, commander.args);
