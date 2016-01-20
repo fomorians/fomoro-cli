@@ -1,6 +1,5 @@
 {
-  "host_": "http://fomoro-server-dev.elasticbeanstalk.com",
-  "host": "http://localhost:3000",
+  "host": "http://fomoro-server-dev.elasticbeanstalk.com",
 
   "model_push_endpoint": "/model/push",
   "model_rm_endpoint": "/model/rm",
