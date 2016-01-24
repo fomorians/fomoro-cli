@@ -15,12 +15,14 @@
     "fomoro-session-info": "./bin/fomoro-session-info",
     "fomoro-session-watch": "./bin/fomoro-session-watch",
     "fomoro-session-stop": "./bin/fomoro-session-stop",
+    "fomoro-session-list": "./bin/fomoro-session-list",
     "fomoro-checkpoint": "./bin/fomoro-checkpoint",
     "fomoro-checkpoint-pull": "./bin/fomoro-checkpoint-pull",
     "fomoro-checkpoint-rm": "./bin/fomoro-checkpoint-rm"
   },
   "dependencies": {
     "cli-spinner": "^0.2.1",
+    "cli-table": "^0.3.1",
     "commander": "^2.9.0",
     "es6-promise": "^3.0.2",
     "mkdirp": "^0.5.1",

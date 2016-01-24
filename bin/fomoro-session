@@ -7,4 +7,5 @@ commander
   .command('stop', 'Stop a training session.')
   .command('info', 'Inspect a training session.')
   .command('watch', 'Watch a training session.')
+  .command('list', 'List all training sessions.')
   .parse(process.argv);

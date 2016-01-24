@@ -10,6 +10,7 @@
   "session_start_endpoint": "/session/start",
   "session_stop_endpoint": "/session/stop",
   "session_info_endpoint": "/session/info",
+  "session_list_endpoint": "/session/list",
 
   "checkpoint_pull_endpoint": "/checkpoint/pull",
   "checkpoint_rm_endpoint": "/checkpoint/rm"
