@@ -3,6 +3,8 @@
 var commander = require('commander');
 var checkpoint_pull = require('../lib/handlers/checkpoint_pull');
 
-commander.parse(process.argv);
+commander
+  .description('Pull training session checkpoints.')
+  .parse(process.argv);
 
 checkpoint_pull.apply(null, commander.args);

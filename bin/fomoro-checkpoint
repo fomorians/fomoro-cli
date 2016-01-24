@@ -3,6 +3,8 @@
 var commander = require('commander');
 
 commander
+  .description('Manage checkpoints.')
+  .arguments('<subcommand>')
   .command('pull', 'Pull training session checkpoints.')
   .command('rm', 'Remove training session checkpoints.')
   .parse(process.argv);

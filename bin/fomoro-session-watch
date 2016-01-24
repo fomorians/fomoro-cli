@@ -3,6 +3,8 @@
 var commander = require('commander');
 var session_watch = require('../lib/handlers/session_watch');
 
-commander.parse(process.argv);
+commander
+  .description('Watch a training session.')
+  .parse(process.argv);
 
 session_watch.apply(null, commander.args);

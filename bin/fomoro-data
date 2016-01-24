@@ -3,6 +3,8 @@
 var commander = require('commander');
 
 commander
+  .description('Manage datasets.')
+  .arguments('<subcommand>')
   .command('push', 'Push a new dataset.')
   .command('rm', 'Remove a dataset.')
   .parse(process.argv);

@@ -3,6 +3,8 @@
 var commander = require('commander');
 var session_stop = require('../lib/handlers/session_stop');
 
-commander.parse(process.argv);
+commander
+  .description('Stop a training session.')
+  .parse(process.argv);
 
 session_stop.apply(null, commander.args);

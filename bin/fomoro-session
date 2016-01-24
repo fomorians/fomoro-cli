@@ -3,6 +3,8 @@
 var commander = require('commander');
 
 commander
+  .description('Manage sessions.')
+  .arguments('<subcommand>')
   .command('start', 'Start a training session.')
   .command('stop', 'Stop a training session.')
   .command('info', 'Inspect a training session.')
