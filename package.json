@@ -34,7 +34,6 @@
     "protobufjs": "^5.0.1",
     "read": "^1.0.7",
     "request": "^2.67.0",
-    "request-progress": "^0.4.0",
     "temp": "^0.8.3"
   },
   "scripts": {
