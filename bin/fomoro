@@ -8,6 +8,7 @@ commander
   .arguments('<subcommand>')
 
   .command('login', 'Login to Fomoro.')
+  .command('signup', 'Signup for Fomoro.')
 
   .command('model <subcommand>', 'Manage models.')
   .command('data <subcommand>', 'Manage datasets.')

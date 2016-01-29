@@ -4,6 +4,7 @@
   "bin": {
     "fomoro": "./bin/fomoro",
     "fomoro-login": "./bin/fomoro-login",
+    "fomoro-signup": "./bin/fomoro-signup",
     "fomoro-model": "./bin/fomoro-model",
     "fomoro-model-push": "./bin/fomoro-model-push",
     "fomoro-model-rm": "./bin/fomoro-model-rm",

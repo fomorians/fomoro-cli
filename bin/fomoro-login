@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 var commander = require('commander');
-var login = require('../lib/handlers/login');
+var user_login = require('../lib/handlers/user_login');
 
 commander
   .description('Login to Fomoro.')
   .parse(process.argv);
 
-login.apply(null, commander.args);
+user_login.apply(null, commander.args);
