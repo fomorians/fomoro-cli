@@ -1,5 +1,5 @@
 {
-  "host": "http://fomoro-server-dev.elasticbeanstalk.com",
+  "host": "https://api.fomoro.com",
 
   "login_endpoint": "/user/login",
   "signup_endpoint": "/user/signup",
