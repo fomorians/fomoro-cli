@@ -16,5 +16,8 @@
   "session_list_endpoint": "/session/list",
 
   "checkpoint_pull_endpoint": "/checkpoint/pull",
-  "checkpoint_rm_endpoint": "/checkpoint/rm"
+  "checkpoint_rm_endpoint": "/checkpoint/rm",
+
+  "summary_pull_endpoint": "/summary/pull",
+  "summary_rm_endpoint": "/summary/rm"
 }

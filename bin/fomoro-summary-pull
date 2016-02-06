@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var summary_pull = require('../lib/handlers/summary_pull');
+
+commander
+  .description('Pull training session summary logs.')
+  .parse(process.argv);
+
+summary_pull.apply(null, commander.args);

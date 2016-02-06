@@ -14,5 +14,6 @@ commander
   .command('data <subcommand>', 'Manage datasets.')
   .command('session <subcommand>', 'Manage sessions.')
   .command('checkpoint <subcommand>', 'Manage checkpoints.')
+  .command('summary <subcommand>', 'Manage summary logs.')
 
   .parse(process.argv);
