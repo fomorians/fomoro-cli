@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var data_list = require('../lib/handlers/data_list');
+
+commander
+  .description('List datasets.')
+  .parse(process.argv);
+
+data_list.apply(null, commander.args);
