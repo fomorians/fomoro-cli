@@ -5,6 +5,7 @@ var model_pull = require('../lib/handlers/model_pull');
 
 commander
   .description('Pull an existing model.')
+  .arguments('[key]')
   .parse(process.argv);
 
 model_pull.apply(null, commander.args);

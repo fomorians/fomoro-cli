@@ -5,6 +5,7 @@ var summary_pull = require('../lib/handlers/summary_pull');
 
 commander
   .description('Pull training session summary logs.')
+  .arguments('[key]')
   .parse(process.argv);
 
 summary_pull.apply(null, commander.args);

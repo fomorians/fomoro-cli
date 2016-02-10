@@ -5,6 +5,7 @@ var session_watch = require('../lib/handlers/session_watch');
 
 commander
   .description('Watch a training session.')
+  .arguments('[key]')
   .parse(process.argv);
 
 session_watch.apply(null, commander.args);

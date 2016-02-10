@@ -5,6 +5,7 @@ var data_rm = require('../lib/handlers/data_rm');
 
 commander
   .description('Remove a dataset.')
+  .arguments('[key]')
   .parse(process.argv);
 
 data_rm.apply(null, commander.args);

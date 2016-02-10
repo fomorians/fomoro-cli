@@ -5,6 +5,7 @@ var data_pull = require('../lib/handlers/data_pull');
 
 commander
   .description('Pull an existing dataset.')
+  .arguments('[key]')
   .parse(process.argv);
 
 data_pull.apply(null, commander.args);

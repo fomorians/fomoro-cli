@@ -5,6 +5,7 @@ var checkpoint_pull = require('../lib/handlers/checkpoint_pull');
 
 commander
   .description('Pull training session checkpoints.')
+  .arguments('[key]')
   .parse(process.argv);
 
 checkpoint_pull.apply(null, commander.args);
