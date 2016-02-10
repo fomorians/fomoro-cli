@@ -6,10 +6,12 @@
 
   "model_list_endpoint": "/model/list",
   "model_push_endpoint": "/model/push",
+  "model_pull_endpoint": "/model/pull",
   "model_rm_endpoint": "/model/rm",
 
   "data_list_endpoint": "/data/list",
   "data_push_endpoint": "/data/push",
+  "data_pull_endpoint": "/data/pull",
   "data_rm_endpoint": "/data/rm",
 
   "session_start_endpoint": "/session/start",

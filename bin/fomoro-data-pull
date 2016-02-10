@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var data_pull = require('../lib/handlers/data_pull');
+
+commander
+  .description('Pull an existing dataset.')
+  .parse(process.argv);
+
+data_pull.apply(null, commander.args);
