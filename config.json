@@ -4,6 +4,7 @@
   "login_endpoint": "/user/login",
   "signup_endpoint": "/user/signup",
 
+  "model_create_endpoint": "/model/create",
   "model_list_endpoint": "/model/list",
   "model_push_endpoint": "/model/push",
   "model_pull_endpoint": "/model/pull",

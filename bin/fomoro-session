@@ -5,9 +5,10 @@ var commander = require('commander');
 commander
   .description('Manage sessions.')
   .arguments('<subcommand>')
-  .command('start [key]', 'Start a training session.')
-  .command('stop [key]', 'Stop a training session.')
-  .command('info [key]', 'Inspect a training session.')
-  .command('watch [key]', 'Watch a training session.')
+  .command('logs [sha]', 'Print logs from session.')
+  .command('start [sha]', 'Start a training session.')
+  .command('stop [sha]', 'Stop a training session.')
+  .command('info [sha]', 'Inspect a training session.')
+  .command('watch [sha]', 'Watch a training session.')
   .command('list', 'List all training sessions.')
   .parse(process.argv);

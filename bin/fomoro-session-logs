@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var session_logs = require('../lib/handlers/session_logs');
+
+// TODO: option for --num (-n)
+// TODO: option for --follow (-f)
+commander
+  .description('Print logs from session.')
+  .arguments('[key]')
+  .parse(process.argv);
+
+session_logs.apply(null, commander.args);

@@ -6,8 +6,8 @@
     "fomoro-login": "./bin/fomoro-login",
     "fomoro-signup": "./bin/fomoro-signup",
     "fomoro-model": "./bin/fomoro-model",
+    "fomoro-model-create": "./bin/fomoro-model-create",
     "fomoro-model-list": "./bin/fomoro-model-list",
-    "fomoro-model-push": "./bin/fomoro-model-push",
     "fomoro-model-pull": "./bin/fomoro-model-pull",
     "fomoro-model-rm": "./bin/fomoro-model-rm",
     "fomoro-data": "./bin/fomoro-data",
@@ -18,6 +18,7 @@
     "fomoro-session": "./bin/fomoro-session",
     "fomoro-session-start": "./bin/fomoro-session-start",
     "fomoro-session-info": "./bin/fomoro-session-info",
+    "fomoro-session-logs": "./bin/fomoro-session-logs",
     "fomoro-session-watch": "./bin/fomoro-session-watch",
     "fomoro-session-stop": "./bin/fomoro-session-stop",
     "fomoro-session-list": "./bin/fomoro-session-list",
@@ -37,11 +38,13 @@
     "mkdirp": "^0.5.1",
     "moment": "^2.11.1",
     "node-spinner": "0.0.4",
+    "nodegit": "^0.11.3",
     "progress": "^1.1.8",
     "protobufjs": "^5.0.1",
     "read": "^1.0.7",
     "request": "^2.67.0",
-    "temp": "^0.8.3"
+    "temp": "^0.8.3",
+    "toml": "^2.3.0"
   },
   "scripts": {
     "test": "mocha"
