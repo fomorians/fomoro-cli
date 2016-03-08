@@ -5,6 +5,6 @@ var commander = require('commander');
 commander
   .description('Manage summary logs.')
   .arguments('<subcommand>')
-  .command('pull [key]', 'Pull training session summary logs.')
-  .command('rm [key]', 'Remove training session summary logs.')
+  .command('pull [sha]', 'Pull training session summary logs.')
+  .command('rm [sha]', 'Remove training session summary logs.')
   .parse(process.argv);

@@ -5,7 +5,7 @@ var session_start = require('../lib/handlers/session_start');
 
 commander
   .description('Start a training session.')
-  .arguments('[key]')
+  .arguments('[sha]')
   .parse(process.argv);
 
 session_start.apply(null, commander.args);

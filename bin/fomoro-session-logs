@@ -7,7 +7,7 @@ var session_logs = require('../lib/handlers/session_logs');
 // TODO: option for --follow (-f)
 commander
   .description('Print logs from session.')
-  .arguments('[key]')
+  .arguments('[sha]')
   .parse(process.argv);
 
 session_logs.apply(null, commander.args);

@@ -5,7 +5,7 @@ var model_rm = require('../lib/handlers/model_rm');
 
 commander
   .description('Remove a model.')
-  .arguments('[key]')
+  .arguments('[model]')
   .parse(process.argv);
 
 model_rm.apply(null, commander.args);

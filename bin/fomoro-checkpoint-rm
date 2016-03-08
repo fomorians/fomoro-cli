@@ -5,7 +5,7 @@ var checkpoint_rm = require('../lib/handlers/checkpoint_rm');
 
 commander
   .description('Remove training session checkpoints.')
-  .arguments('[key]')
+  .arguments('[sha]')
   .parse(process.argv);
 
 checkpoint_rm.apply(null, commander.args);

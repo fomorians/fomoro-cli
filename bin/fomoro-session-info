@@ -5,7 +5,7 @@ var session_info = require('../lib/handlers/session_info');
 
 commander
   .description('Inspect a training session.')
-  .arguments('[key]')
+  .arguments('[sha]')
   .parse(process.argv);
 
 session_info.apply(null, commander.args);

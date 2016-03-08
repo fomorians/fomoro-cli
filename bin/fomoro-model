@@ -7,6 +7,6 @@ commander
   .arguments('<subcommand>')
   .command('create', 'Create a new model.')
   .command('list', 'List models.')
-  .command('pull [key]', 'Pull an existing model.')
-  .command('rm [key]', 'Remove a model.')
+  .command('pull [model]', 'Pull an existing model.')
+  .command('rm [model]', 'Remove a model.')
   .parse(process.argv);
