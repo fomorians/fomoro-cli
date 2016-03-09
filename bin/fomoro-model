@@ -5,8 +5,9 @@ var commander = require('commander');
 commander
   .description('Manage models.')
   .arguments('<subcommand>')
-  .command('create', 'Create a new model.')
   .command('list', 'List models.')
-  .command('pull [model]', 'Pull an existing model.')
+  .command('create', 'Create a new model.')
   .command('rm [model]', 'Remove a model.')
+  .command('pull [sha]', 'Pull an existing model.')
+  .command('rm-artifact [sha]', 'Remove a model artifact.')
   .parse(process.argv);

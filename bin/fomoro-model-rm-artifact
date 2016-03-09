@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var model_rm_artifact = require('../lib/handlers/model_rm_artifact');
+
+commander
+  .description('Remove a model artifact.')
+  .arguments('[sha]')
+  .parse(process.argv);
+
+model_rm_artifact.apply(null, commander.args);

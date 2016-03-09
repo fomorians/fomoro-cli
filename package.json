@@ -10,6 +10,7 @@
     "fomoro-model-list": "./bin/fomoro-model-list",
     "fomoro-model-pull": "./bin/fomoro-model-pull",
     "fomoro-model-rm": "./bin/fomoro-model-rm",
+    "fomoro-model-rm-artifact": "./bin/fomoro-model-rm-artifact",
     "fomoro-data": "./bin/fomoro-data",
     "fomoro-data-list": "./bin/fomoro-data-list",
     "fomoro-data-push": "./bin/fomoro-data-push",
