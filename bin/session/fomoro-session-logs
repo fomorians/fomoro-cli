@@ -6,6 +6,11 @@ var session_logs = require('../../lib/handlers/session/session_logs');
 commander
   .description('Fetch logs from a session.')
   .arguments('[sha]')
+  .option('-n --num <n>', 'Number of lines', parseInt)
+  .option('-f --follow', 'Follow the logs, waiting for more lines')
   .parse(process.argv);
 
-session_logs.apply(null, commander.args);
+var sha = commander.args[0];
+var num = commander.num;
+var follow = commander.follow;
+session_logs(sha, num, follow);
