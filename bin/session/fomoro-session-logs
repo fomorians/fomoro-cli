@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var session_logs = require('../../lib/handlers/session/session_logs');
+
+commander
+  .description('Fetch logs from a training session.')
+  .arguments('[sha]')
+  .parse(process.argv);
+
+session_logs.apply(null, commander.args);

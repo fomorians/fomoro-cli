@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+
+commander
+  .description('Manage user.')
+  .arguments('<login|signup>')
+  .command('login', 'Login to Fomoro.')
+  .command('signup', 'Signup for Fomoro.')
+  .parse(process.argv);

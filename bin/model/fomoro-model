@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+
+commander
+  .description('Manage models.')
+  .arguments('<create|remove|ls>')
+  .command('create', 'Create a new model.')
+  .command('ls', 'List models.')
+  .command('rm [name]', 'Remove a model.')
+  .parse(process.argv);

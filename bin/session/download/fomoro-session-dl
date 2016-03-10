@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+
+commander
+  .description('Download artifacts.')
+  .arguments('<model|summary|checkpoint>')
+  .command('model [sha]', 'Download model artifacts.')
+  .command('summary [sha]', 'Download summary artifacts.')
+  .command('checkpoint [sha]', 'Download checkpoint artifacts.')
+  .parse(process.argv);

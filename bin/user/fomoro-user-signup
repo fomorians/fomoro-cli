@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var user_signup = require('../../lib/handlers/user/user_signup');
+
+commander
+  .description('Signup for Fomoro.')
+  .parse(process.argv);
+
+user_signup.apply(null, commander.args);

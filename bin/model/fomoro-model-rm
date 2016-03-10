@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var model_rm = require('../../lib/handlers/model/model_rm');
+
+commander
+  .description('Remove a model.')
+  .arguments('[name]')
+  .parse(process.argv);
+
+model_rm.apply(null, commander.args);

@@ -3,17 +3,12 @@
 var commander = require('commander');
 
 commander
-  .version('0.0.1')
+  .version('0.2.5')
   .description('Fomoro toolbelt.')
   .arguments('<subcommand>')
-
-  .command('login', 'Login to Fomoro.')
-  .command('signup', 'Signup for Fomoro.')
-
-  .command('model <subcommand>', 'Manage models.')
-  .command('data <subcommand>', 'Manage datasets.')
-  .command('session <subcommand>', 'Manage sessions.')
-  .command('checkpoint <subcommand>', 'Manage checkpoints.')
-  .command('summary <subcommand>', 'Manage summary logs.')
+  .command('user <login|signup>', 'Manage user.')
+  .command('model <create|rm|ls>', 'Manage models.')
+  .command('data <publish|unpublish|dl|ls>', 'Manage datasets.')
+  .command('session <start|stop|status|watch|logs|ls|dl>', 'Manage sessions.')
 
   .parse(process.argv);

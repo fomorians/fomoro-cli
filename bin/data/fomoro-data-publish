@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var data_push = require('../../lib/handlers/data/data_publish');
+
+commander
+  .description('Publish a new dataset version.')
+  .parse(process.argv);
+
+data_push.apply(null, commander.args);

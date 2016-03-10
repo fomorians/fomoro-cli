@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var session_stop = require('../../lib/handlers/session/session_stop');
+
+commander
+  .description('Stop a training session.')
+  .arguments('[sha]')
+  .parse(process.argv);
+
+session_stop.apply(null, commander.args);

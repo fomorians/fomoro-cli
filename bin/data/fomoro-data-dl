@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var data_pull = require('../../lib/handlers/data/data_dl');
+
+commander
+  .description('Download a dataset version where key is "name@version".')
+  .arguments('[key]')
+  .parse(process.argv);
+
+data_pull.apply(null, commander.args);

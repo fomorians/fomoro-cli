@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+
+commander
+  .description('Manage sessions.')
+  .arguments('<start|stop|rm|status|watch|logs|ls|dl>')
+  .command('start [sha]', 'Start a training session.')
+  .command('stop [sha]', 'Stop a training session.')
+  .command('rm [sha]', 'Remove a training session.')
+  .command('status [sha]', 'Inspect a training session.')
+  .command('watch [sha]', 'Watch a training session.')
+  .command('logs [sha]', 'Print logs from a session.')
+  .command('ls', 'List all training sessions.')
+  .command('dl', 'Download training session artifacts.')
+
+  .parse(process.argv);

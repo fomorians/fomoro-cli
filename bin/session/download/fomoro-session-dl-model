@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var model_pull = require('../../../lib/handlers/session/download/session_dl_model');
+
+commander
+  .description('Download model artifacts.')
+  .arguments('[sha]')
+  .parse(process.argv);
+
+model_pull.apply(null, commander.args);

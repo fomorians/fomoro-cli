@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+
+commander
+  .description('Manage datasets.')
+  .arguments('<publish|unpublish|dl|ls>')
+  .command('publish', 'Publish a new dataset version.')
+  .command('unpublish [key]', 'Unpublish a dataset version.')
+  .command('dl [key]', 'Download a dataset version.')
+  .command('ls', 'List datasets.')
+  .parse(process.argv);

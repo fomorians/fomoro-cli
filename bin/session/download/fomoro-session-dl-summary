@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var summary_pull = require('../../../lib/handlers/session/download/session_dl_summary');
+
+commander
+  .description('Download summary artifacts.')
+  .arguments('[sha]')
+  .parse(process.argv);
+
+summary_pull.apply(null, commander.args);
