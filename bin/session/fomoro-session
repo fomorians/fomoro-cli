@@ -3,15 +3,15 @@
 var commander = require('commander');
 
 commander
-  .description('Manage sessions.')
+  .description('Manage training sessions.')
   .arguments('<start|stop|rm|status|watch|logs|ls|dl>')
-  .command('start [sha]', 'Start a training session.')
-  .command('stop [sha]', 'Stop a training session.')
-  .command('rm [sha]', 'Remove a training session.')
-  .command('status [sha]', 'Inspect a training session.')
-  .command('watch [sha]', 'Watch a training session.')
-  .command('logs [sha]', 'Print logs from a session.')
-  .command('ls', 'List all training sessions.')
-  .command('dl', 'Download training session artifacts.')
+  .command('start [sha]', 'Start a session.')
+  .command('stop [sha]', 'Stop a session.')
+  .command('rm [sha]', 'Remove a session.')
+  .command('status [sha]', 'Get a session\'s status.')
+  .command('watch [sha]', 'Watch a session.')
+  .command('logs [sha]', 'Fetch logs from a session.')
+  .command('ls', 'List all sessions.')
+  .command('dl', 'Download session artifacts.')
 
   .parse(process.argv);

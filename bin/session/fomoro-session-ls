@@ -4,7 +4,7 @@ var commander = require('commander');
 var session_list = require('../../lib/handlers/session/session_ls');
 
 commander
-  .description('List all training sessions.')
+  .description('List all sessions.')
   .parse(process.argv);
 
 session_list.apply(null, commander.args);

@@ -1,30 +1,26 @@
 {
-  "host": "https://api.fomoro.com/api/v0",
+  "host": "https://api.fomoro.com/api/v0.1",
 
-  "login_endpoint": "/user/login",
-  "signup_endpoint": "/user/signup",
+  "user_login_endpoint": "/user/login",
+  "user_signup_endpoint": "/user/signup",
 
   "model_create_endpoint": "/model/create",
   "model_list_endpoint": "/model/list",
-  "model_rm_endpoint": "/model/rm",
-
-  "model_pull_endpoint": "/model/pull",
-  "model_rm_artifact_endpoint": "/model/artifact/rm",
+  "model_remove_endpoint": "/model/remove",
 
   "data_list_endpoint": "/data/list",
-  "data_push_endpoint": "/data/push",
-  "data_pull_endpoint": "/data/pull",
-  "data_rm_endpoint": "/data/rm",
+  "data_publish_endpoint": "/data/publish",
+  "data_unpublish_endpoint": "/data/unpublish",
+  "data_download_endpoint": "/data/download",
 
   "session_start_endpoint": "/session/start",
   "session_stop_endpoint": "/session/stop",
-  "session_info_endpoint": "/session/info",
+  "session_status_endpoint": "/session/status",
   "session_list_endpoint": "/session/list",
   "session_logs_endpoint": "/session/logs",
+  "session_remove_endpoint": "/session/remove",
 
-  "checkpoint_pull_endpoint": "/checkpoint/pull",
-  "checkpoint_rm_endpoint": "/checkpoint/rm",
-
-  "summary_pull_endpoint": "/summary/pull",
-  "summary_rm_endpoint": "/summary/rm"
+  "session_download_model_endpoint": "/session/download/model",
+  "session_download_checkpoint_endpoint": "/session/download/checkpoint",
+  "session_download_summary_endpoint": "/session/download/summary"
 }

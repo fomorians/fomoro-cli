@@ -4,7 +4,7 @@ var commander = require('commander');
 var session_info = require('../../lib/handlers/session/session_status');
 
 commander
-  .description('Print the status of a training session.')
+  .description('Get a session\'s status.')
   .arguments('[sha]')
   .parse(process.argv);
 

@@ -4,7 +4,7 @@ var commander = require('commander');
 var session_stop = require('../../lib/handlers/session/session_stop');
 
 commander
-  .description('Stop a training session.')
+  .description('Stop a session.')
   .arguments('[sha]')
   .parse(process.argv);
 

@@ -4,7 +4,7 @@ var commander = require('commander');
 var session_watch = require('../../lib/handlers/session/session_watch');
 
 commander
-  .description('Watch the status of a training session.')
+  .description('Watch the status of a session.')
   .arguments('[sha]')
   .parse(process.argv);
 

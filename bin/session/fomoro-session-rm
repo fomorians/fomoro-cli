@@ -4,7 +4,7 @@ var commander = require('commander');
 var session_rm = require('../../lib/handlers/session/session_rm');
 
 commander
-  .description('Remove a session.')
+  .description('Remove a session and its artifacts.')
   .arguments('[sha]')
   .parse(process.argv);
 

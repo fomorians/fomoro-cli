@@ -9,6 +9,6 @@ commander
   .command('user <login|signup>', 'Manage user.')
   .command('model <create|rm|ls>', 'Manage models.')
   .command('data <publish|unpublish|dl|ls>', 'Manage datasets.')
-  .command('session <start|stop|status|watch|logs|ls|dl>', 'Manage sessions.')
+  .command('session <start|stop|status|watch|logs|ls|dl>', 'Manage training sessions.')
 
   .parse(process.argv);

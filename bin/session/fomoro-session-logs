@@ -4,7 +4,7 @@ var commander = require('commander');
 var session_logs = require('../../lib/handlers/session/session_logs');
 
 commander
-  .description('Fetch logs from a training session.')
+  .description('Fetch logs from a session.')
   .arguments('[sha]')
   .parse(process.argv);
 
