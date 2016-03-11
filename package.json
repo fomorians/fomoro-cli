@@ -1,6 +1,6 @@
 {
   "name": "@fomoro/fomoro-cli",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "bin": {
     "fomoro": "./bin/fomoro",
     "fomoro-model": "./bin/model/fomoro-model",
