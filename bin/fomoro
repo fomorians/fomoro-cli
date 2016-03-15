@@ -3,7 +3,7 @@
 var commander = require('commander');
 
 commander
-  .version('0.2.13')
+  .version('0.2.14')
   .description('Fomoro toolbelt.')
   .arguments('<subcommand>')
   .command('user <login|signup>', 'Manage user.')
