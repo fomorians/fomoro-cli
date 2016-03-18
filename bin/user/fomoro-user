@@ -3,8 +3,9 @@
 var commander = require('commander');
 
 commander
-  .description('Manage user.')
-  .arguments('<login|signup>')
+  .description('Manage user account.')
+  .arguments('<login|logout|signup>')
   .command('login', 'Login to Fomoro.')
+  .command('logout', 'Logout of Fomoro.')
   .command('signup', 'Signup for Fomoro.')
   .parse(process.argv);

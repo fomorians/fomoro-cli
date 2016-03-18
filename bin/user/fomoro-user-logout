@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var user_logout = require('../../lib/handlers/user/user_logout');
+
+commander
+  .description('Logout of Fomoro.')
+  .parse(process.argv);
+
+user_logout.apply(null, commander.args);

@@ -1,6 +1,6 @@
 {
   "name": "@fomoro/fomoro-cli",
-  "version": "0.2.16",
+  "version": "0.2.17",
   "bin": {
     "fomoro": "./bin/fomoro",
     "fomoro-model": "./bin/model/fomoro-model",
@@ -25,6 +25,7 @@
     "fomoro-session-watch": "./bin/session/fomoro-session-watch",
     "fomoro-session-rm": "./bin/session/fomoro-session-rm",
     "fomoro-user": "./bin/user/fomoro-user",
+    "fomoro-user-logout": "./bin/user/fomoro-user-logout",
     "fomoro-user-login": "./bin/user/fomoro-user-login",
     "fomoro-user-signup": "./bin/user/fomoro-user-signup"
   },
