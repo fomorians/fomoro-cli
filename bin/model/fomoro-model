@@ -4,8 +4,9 @@ var commander = require('commander');
 
 commander
   .description('Manage models.')
-  .arguments('<create|remove|ls>')
-  .command('create', 'Create a new model.')
+  .arguments('<init|add|rm|ls>')
+  .command('init', 'Generate config for a model.')
+  .command('add', 'Add a model.')
   .command('ls', 'List models.')
   .command('rm [name]', 'Remove a model.')
   .parse(process.argv);

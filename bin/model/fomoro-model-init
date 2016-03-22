@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var model_init = require('../../lib/handlers/model/model_init');
+
+commander
+  .description('Generate config for a model.')
+  .parse(process.argv);
+
+model_init.apply(null, commander.args);

@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var commander = require('commander');
+var model_add = require('../../lib/handlers/model/model_add');
+
+commander
+  .description('Add a model.')
+  .parse(process.argv);
+
+model_add.apply(null, commander.args);
