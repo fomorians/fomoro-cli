@@ -6,6 +6,11 @@ var session_start = require('../../lib/handlers/session/session_start');
 commander
   .description('Start a session.')
   .arguments('[sha]')
+  .option('-w --watch', 'Watch the status of a session while it starts.')
+  .option('-f --follow', 'Follow the logs, waiting for more lines.')
   .parse(process.argv);
 
-session_start.apply(null, commander.args);
+var sha = commander.args[0];
+var watch = commander.watch;
+var follow = commander.follow;
+session_start(sha, watch, follow);
