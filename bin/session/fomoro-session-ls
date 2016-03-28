@@ -4,7 +4,9 @@ var commander = require('commander');
 var session_list = require('../../lib/handlers/session/session_ls');
 
 commander
-  .description('List all sessions.')
+  .description('List sessions.')
+  .option('-a --all', 'List all sessions')
   .parse(process.argv);
 
-session_list.apply(null, commander.args);
+var all = commander.all;
+session_list(all);
