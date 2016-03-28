@@ -5,7 +5,7 @@ var checkpoint_pull = require('../../../lib/handlers/session/download/session_dl
 
 commander
   .description('Download checkpoint artifacts.')
-  .arguments('[sha]')
+  .arguments('[id]')
   .parse(process.argv);
 
 checkpoint_pull.apply(null, commander.args);

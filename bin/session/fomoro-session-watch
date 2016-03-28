@@ -5,7 +5,7 @@ var session_watch = require('../../lib/handlers/session/session_watch');
 
 commander
   .description('Watch the status of a session.')
-  .arguments('[sha]')
+  .arguments('[id]')
   .parse(process.argv);
 
 session_watch.apply(null, commander.args);

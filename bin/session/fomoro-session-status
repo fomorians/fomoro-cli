@@ -5,7 +5,7 @@ var session_info = require('../../lib/handlers/session/session_status');
 
 commander
   .description('Get a session\'s status.')
-  .arguments('[sha]')
+  .arguments('[id]')
   .parse(process.argv);
 
 session_info.apply(null, commander.args);

@@ -5,7 +5,7 @@ var session_start = require('../../lib/handlers/session/session_start');
 
 commander
   .description('Start a session.')
-  .arguments('[sha]')
+  .arguments('[id]')
   .option('-w --watch', 'Watch the status of a session while it starts.')
   .option('-f --follow', 'Follow the logs, waiting for more lines.')
   .parse(process.argv);

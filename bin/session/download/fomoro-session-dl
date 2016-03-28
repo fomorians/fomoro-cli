@@ -5,7 +5,7 @@ var commander = require('commander');
 commander
   .description('Download artifacts.')
   .arguments('<model|summary|checkpoint>')
-  .command('model [sha]', 'Download model artifacts.')
-  .command('summary [sha]', 'Download summary artifacts.')
-  .command('checkpoint [sha]', 'Download checkpoint artifacts.')
+  .command('model [id]', 'Download model artifacts.')
+  .command('summary [id]', 'Download summary artifacts.')
+  .command('checkpoint [id]', 'Download checkpoint artifacts.')
   .parse(process.argv);

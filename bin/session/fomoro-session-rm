@@ -5,7 +5,7 @@ var session_rm = require('../../lib/handlers/session/session_rm');
 
 commander
   .description('Remove a session and its artifacts.')
-  .arguments('[sha]')
+  .arguments('[id]')
   .parse(process.argv);
 
 session_rm.apply(null, commander.args);

@@ -5,7 +5,7 @@ var session_stop = require('../../lib/handlers/session/session_stop');
 
 commander
   .description('Stop a session.')
-  .arguments('[sha]')
+  .arguments('[id]')
   .parse(process.argv);
 
 session_stop.apply(null, commander.args);
