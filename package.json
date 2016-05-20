@@ -40,7 +40,7 @@
     "mkdirp": "^0.5.1",
     "moment": "^2.11.1",
     "node-spinner": "0.0.4",
-    "nodegit": "^0.11.3",
+    "nodegit": "^0.13.0",
     "progress": "^1.1.8",
     "protobufjs": "^5.0.1",
     "read": "^1.0.7",
