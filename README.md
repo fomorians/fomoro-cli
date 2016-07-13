@@ -1,4 +1,3 @@
-Fomoro CLI
-===
+# Fomoro CLI
 
-[Fomoro User Guide](https://fomoro.gitbooks.io/guide/content/index.html)
+### The CLI has been deprecated (for now) in favor of the web interface at [fomoro.com](https://fomoro.com)
